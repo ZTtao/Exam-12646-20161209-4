@@ -23,7 +23,9 @@ public class Random {
 			if(map.containsKey(key)){
 				map.get(key).add(list.get(i));
 			}else{
-				map.put(key, new ArrayList<Integer>(list.get(i)));
+				List<Integer> list1 = new ArrayList<Integer>();
+				list1.add(list.get(i));
+				map.put(key, list1);
 			}
 		}
 		System.out.print("Map中的数据为：{");
